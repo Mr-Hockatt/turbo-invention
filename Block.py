@@ -3,7 +3,7 @@ import tkinter as tk
 import tkinter.font as tkFont
 import tkinter.messagebox as tkMessageBox
 #-------------------------------------------------------------------------
-
+print("All looking good right here huh?")
 #-------------------------------------------------------------------------
 class Block(pygame.sprite.Sprite):
 
@@ -186,6 +186,7 @@ class Block(pygame.sprite.Sprite):
 
         pygame.draw.rect(screen, self.color, self.rect, 1)
 #-------------------------------------------------------------------------
+    """
     def Edit_Coefficients(self):
         #-------------------------------------------------------------------------
         def Obtain_Coefficients():
@@ -233,7 +234,7 @@ class Block(pygame.sprite.Sprite):
                 print("No errors")
                 main_window.destroy()
         #-------------------------------------------------------------------------
-
+        """
         main_window = tk.Tk()
         main_window.title("Set Coefficients  -  {}".format(self.name))
         main_window.geometry('300x200')
